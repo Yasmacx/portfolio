@@ -1,0 +1,120 @@
+/* Resposta Global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #212121; 
+  color: #d0d0d0;
+  padding: 30px 15px;
+}
+
+.resume-container {
+  max-width: 950px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 320px 1fr; 
+  gap: 20px;
+}
+
+.card {
+  background-color: #4b4b4b; /* Cor sólida dos quadros */
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.photo-card {
+  background-color: #6c04a8; 
+  border-radius: 16px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.profile-pic {
+  width: 130px; 
+  height: 130px; 
+  object-fit: cover; 
+  background-color: #ffffff; 
+  border-radius: 50%; 
+}
+
+.profile-pic {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  object-fit: cover;
+  background-color: #4b4b4b; 
+  border-radius: 10px;
+}
+
+/* Apresentação */
+.intro-card {
+  margin-bottom: 20px;
+}
+
+.badge {
+  background-color: #4b4b4b;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.intro-card h1 {
+  font-size: 28px;
+  margin-top: 10px;
+  color: #6c04a8;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  color: #6c04a8;
+  letter-spacing: 0.5px;
+}
+
+ul {
+  padding-left: 18px;
+}
+
+li {
+  font-size: 14px;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.date {
+  font-size: 12px;
+  color: #6c04a8;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #e4e4e4;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .resume-container {
+    grid-template-columns: 1fr;
+  }
+}
