@@ -18,58 +18,55 @@ body {
   display: grid;
   grid-template-columns: 320px 1fr; 
   gap: 20px;
+  align-items: start; /* Alinha o topo das duas colunas */
 }
 
 .card {
-  background-color: #4b4b4b; /* Cor sólida dos quadros */
+  background-color: #363636; /* Cor sólida dos quadros */
   padding: 20px;
   border-radius: 12px;
   margin-bottom: 20px;
+  width: 100%;
 }
 
+/* QUADRO DA FOTO */
 .photo-card {
   background-color: #6c04a8; 
-  border-radius: 16px;
+  border-radius: 12px;
   padding: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
-}
-.profile-pic {
-  width: 130px; 
-  height: 130px; 
-  object-fit: cover; 
-  background-color: #ffffff; 
-  border-radius: 50%; 
+  width: 100%;
 }
 
+/* FOTO - Ajustada para caber na coluna de 320px sem quebrar */
 .profile-pic {
   width: 100%;
-  max-width: 200px;
-  height: auto;
-  object-fit: cover;
-  background-color: #4b4b4b; 
-  border-radius: 10px;
+  max-width: 300px; 
+  height: 300px; 
+  object-fit: cover; 
+  background-color: #ffffff; 
+  border-radius: 8px;
 }
 
 /* Apresentação */
-.intro-card {
-  margin-bottom: 20px;
-}
-
 .badge {
   background-color: #4b4b4b;
-  padding: 4px 12px;
+  color: #ffffff;
+  padding: 6px 12px;
   border-radius: 20px;
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
+  display: inline-block;
+  margin-top: 8px;
+  margin-bottom: 12px;
 }
 
-.intro-card h1 {
-  font-size: 28px;
-  margin-top: 10px;
+h1 {
+  font-size: 24px;
   color: #6c04a8;
   line-height: 1.2;
 }
@@ -78,8 +75,12 @@ h3 {
   font-size: 16px;
   text-transform: uppercase;
   margin-bottom: 12px;
-  color: #6c04a8;
+  color: #a855f7;
   letter-spacing: 0.5px;
+}
+
+.contact-info p {
+  margin-bottom: 8px;
 }
 
 ul {
@@ -95,22 +96,35 @@ li {
 p {
   font-size: 14px;
   margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+strong {
+  color: #ffffff;
 }
 
 .date {
   font-size: 12px;
-  color: #6c04a8;
+  color: #d8b4fe;
   margin-bottom: 10px;
 }
 
 a {
-  color: #e4e4e4;
+  color: #c084fc;
   text-decoration: none;
   word-break: break-all;
 }
 
 a:hover {
   text-decoration: underline;
+  color: #e9d5ff;
+}
+
+.separator {
+  border: 0;
+  height: 1px;
+  background-color: #4b4b4b;
+  margin: 15px 0;
 }
 
 @media (max-width: 768px) {
